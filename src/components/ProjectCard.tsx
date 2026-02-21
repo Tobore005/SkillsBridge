@@ -18,7 +18,9 @@ export function ProjectCard() {
                         </span>
                     </div>
 
-                    <h4 className="text-xl font-bold text-[#1e2a5e]">Executive Leadership Capstone</h4>
+                    <h4 className="heading-secondary text-[#1e2a5e]">
+                        Executive Leadership Capstone
+                    </h4>
 
                     <p className="text-gray-500 text-sm max-w-2xl leading-relaxed">
                         A comprehensive capstone project integrating leadership principles,

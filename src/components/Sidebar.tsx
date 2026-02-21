@@ -7,8 +7,8 @@ import {
     ListTodo,
     Users,
     GraduationCap,
-    Megaphone,
     BarChart3,
+    Settings,
     X
 } from "lucide-react";
 import Link from "next/link";
@@ -22,8 +22,8 @@ const navItems = [
     { icon: ListTodo, label: "Topics", href: "/topics" },
     { icon: Users, label: "Facilitators", href: "/facilitators" },
     { icon: GraduationCap, label: "Students", href: "/students" },
-    { icon: Megaphone, label: "Announcements", href: "/announcements" },
     { icon: BarChart3, label: "Reports & Analytics", href: "/reports" },
+    { icon: Settings, label: "Settings", href: "/settings" },
 ];
 
 export function Sidebar({ isOpen, onClose }: { isOpen?: boolean; onClose?: () => void }) {

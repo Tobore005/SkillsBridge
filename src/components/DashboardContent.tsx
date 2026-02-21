@@ -11,11 +11,11 @@ export function DashboardContent() {
     return (
         <div className="p-8 space-y-8 bg-[#f8f9fc] min-h-screen">
             {/* Course Banner */}
-            <div className="bg-[#1e2a5e] rounded-2xl p-8 text-white relative overflow-hidden shadow-xl shadow-[#1e2a5e]/10">
+            <div className="bg-[linear-gradient(90.09deg,#2D479C_0.07%,#101936_127.65%)] rounded-2xl p-8 text-white relative overflow-hidden shadow-xl shadow-[#1e2a5e]/10">
                 <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
                     <div className="space-y-1">
                         <span className="text-blue-300 text-sm font-medium uppercase tracking-wider">Lagos Business School</span>
-                        <h2 className="text-3xl font-bold">Executive MBA (EMBA)</h2>
+                        <h2 className="heading-primary">Executive MBA (EMBA)</h2>
                     </div>
 
                     <button className="bg-white text-[#1e2a5e] px-4 py-2.5 rounded-lg flex items-center justify-between gap-3 font-semibold hover:bg-gray-50 transition-colors w-full md:w-auto min-w-[180px]">
@@ -63,7 +63,7 @@ export function DashboardContent() {
             {/* Action Section */}
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pt-4 border-t border-gray-100">
                 <div className="space-y-1">
-                    <h3 className="text-xl font-bold text-[#1e2a5e]">Manage Modules</h3>
+                    <h3 className="heading-primary text-[#1e2a5e]">Manage Modules</h3>
                     <p className="text-gray-500 text-sm">
                         View and manage modules under <span className="font-semibold text-[#1e2a5e]">Executive MBA (EMBA)</span>
                     </p>

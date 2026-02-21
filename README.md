@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkillsBridge Dashboard
 
-## Getting Started
+A responsive dashboard interface built with **Next.js** and **TypeScript**, based on a provided Figma design.  
+This project demonstrates component-based architecture, reusable UI elements, and functional filtering of demo module data.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Live Demo
+[https://skills-bridge-rho.vercel.app/](https://skills-bridge-rho.vercel.app/)
+
+---
+
+## 🛠 Tech Stack
+- **Next.js** (App Router)  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **Lucide React** (Icons)  
+
+---
+
+## ✨ Features
+- Fully **responsive dashboard layout**  
+- **Reusable components**: `StatCard`, `ModuleItem`, `ProjectCard`, etc.  
+- **Functional module search**  
+- **Status-based filtering**  
+- Demo module data implementation  
+- Clean and maintainable component structure  
+- Styled with **Tailwind CSS**  
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+  app/            → Next.js app router structure
+  components/     → Reusable UI components
+  types/          → TypeScript interfaces
+⚙️ Getting Started
+
+1. Clone the repository:
+
+git clone https://github.com/Tobore005/SkillsBridge.git
+
+2. Install dependencies:
+
+npm install
+
+3. Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
+🧠 Design Decisions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Centralized state management at the dashboard level to handle filtering logic efficiently.
 
-## Learn More
+Component separation to promote reusability and maintainability.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Demo data is used to simulate real module content as required in the task instructions

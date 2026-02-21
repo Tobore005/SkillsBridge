@@ -73,18 +73,18 @@ export function DashboardContent() {
   } = useModuleFilter(DUMMY_MODULES);
 
   return (
-    <div className="p-8 space-y-8 bg-[#f8f9fc] min-h-screen">
+    <div className="p-4 md:p-6 lg:p-8 space-y-6 md:space-y-8 bg-[#f8f9fc] min-h-screen">
       {/* Course Banner */}
-      <div className="bg-[linear-gradient(90.09deg,#2D479C_0.07%,#101936_127.65%)] rounded-2xl p-8 text-white relative overflow-hidden shadow-xl shadow-[#1e2a5e]/10">
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="bg-[linear-gradient(90.09deg,#2D479C_0.07%,#101936_127.65%)] rounded-xl md:rounded-2xl p-4 md:p-6 lg:p-8 text-white relative overflow-hidden shadow-xl shadow-[#1e2a5e]/10">
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 md:gap-6">
           <div className="space-y-1">
-            <span className="text-blue-300 text-sm font-medium uppercase tracking-wider">
+            <span className="text-blue-300 text-xs md:text-sm font-medium uppercase tracking-wider">
               Lagos Business School
             </span>
-            <h2 className="heading-primary">Executive MBA (EMBA)</h2>
+            <h2 className="text-lg md:text-2xl lg:heading-primary font-medium md:font-medium">Executive MBA (EMBA)</h2>
           </div>
 
-          <button className="bg-white text-[#1e2a5e] px-4 py-2.5 rounded-lg flex items-center justify-between gap-3 font-semibold hover:bg-gray-50 transition-colors w-full md:w-auto min-w-[180px]">
+          <button className="bg-white text-[#1e2a5e] px-3 md:px-4 py-2 md:py-2.5 rounded-lg flex items-center justify-between gap-2 md:gap-3 font-semibold hover:bg-gray-50 transition-colors w-full md:w-auto min-w-[160px] md:min-w-[180px] text-sm md:text-base">
             Switch Course
             <ChevronDown className="w-4 h-4 text-gray-400" />
           </button>
@@ -95,7 +95,7 @@ export function DashboardContent() {
       </div>
 
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
         <StatCard
           icon={Layers}
           value="8"
@@ -127,12 +127,12 @@ export function DashboardContent() {
       </div>
 
       {/* Action Section */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pt-4 border-t border-gray-100">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 md:gap-6 pt-4 border-t border-gray-100">
         <div className="space-y-1">
-          <h4 className="font-inter font-medium text-[24px] leading-[100%] tracking-[0%] text-black">
+          <h4 className="font-inter font-medium text-lg md:text-[24px] leading-[100%] tracking-[0%] text-black">
             Manage Modules
           </h4>
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-xs md:text-sm">
             View and manage modules under{" "}
             <span className="font-semibold text-[#1e2a5e]">
               Executive MBA (EMBA)
@@ -140,20 +140,21 @@ export function DashboardContent() {
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
-          <button className="flex items-center gap-2 px-6 py-2.5 rounded-lg border border-gray-200 text-[#1e2a5e] font-semibold hover:bg-white hover:shadow-md transition-all">
+        <div className="flex flex-col sm:flex-row items-center gap-2 md:gap-4 w-full md:w-auto">
+          <button className="flex items-center justify-center gap-2 px-4 md:px-6 py-2 md:py-2.5 rounded-lg border border-gray-200 text-[#1e2a5e] font-semibold hover:bg-white hover:shadow-md transition-all text-xs md:text-sm w-full sm:w-auto whitespace-nowrap">
             <Briefcase className="w-4 h-4" />
-            Manage Course Final Project
+            <span className="hidden sm:inline">Manage Course Final Project</span>
+            <span className="sm:hidden">Manage Project</span>
           </button>
-          <button className="flex items-center gap-2 px-6 py-2.5 rounded-lg bg-[#1e2a5e] text-white font-semibold hover:bg-[#2a3b82] hover:shadow-lg transition-all">
+          <button className="flex items-center justify-center gap-2 px-4 md:px-6 py-2 md:py-2.5 rounded-lg bg-[#1e2a5e] text-white font-semibold hover:bg-[#2a3b82] hover:shadow-lg transition-all text-xs md:text-sm w-full sm:w-auto whitespace-nowrap">
             <Plus className="w-4 h-4" />
-            Create Module
+            <span>Create Module</span>
           </button>
         </div>
       </div>
 
       {/* Project and Search Section */}
-      <div className="space-y-6">
+      <div className="space-y-4 md:space-y-6">
         <ProjectCard />
         <ModuleSearchBar
           searchTerm={searchTerm}
@@ -164,7 +165,7 @@ export function DashboardContent() {
       </div>
 
       {/* Modules List */}
-      <div className="space-y-4">
+      <div className="space-y-3 md:space-y-4">
         {filteredModules.length > 0 ? (
           filteredModules.map((module) => (
             <ModuleItem key={module.id} {...module} />

@@ -24,11 +24,3 @@ body {
   line-height: 1;
   letter-spacing: 0;
 }
-
-.heading-secondary {
-  font-family: var(--font-inter);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0;
-}
